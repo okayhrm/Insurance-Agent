@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-MODEL = genai.GenerativeModel("gemini-2.0-flash-exp")  # Updated model
+MODEL = genai.GenerativeModel("gemini-2.5-flash")  # Updated model
 
 SYSTEM_PROMPT = """You are an expert insurance policy analyst. Your job is to answer questions about insurance policies based on provided document excerpts.
 
